@@ -8,7 +8,8 @@ def gene_pasword():
     longitud = int (input('\nDigite el numero para la longitud de la contraseña: '))
     
     caracteres = string.ascii_letters + string.digits # letras M/m + numeros
-    contraseña = ''.join(random.choice(caracteres)
+    # metodo ''.join (concatenar)
+    contraseña = ''.join(random.choice(caracteres) # random (forma aleatoria caracteres)
                         # bucle for, rango de contraseña
                         for i in range (longitud) # i = 0
                         )
