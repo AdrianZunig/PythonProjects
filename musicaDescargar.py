@@ -49,9 +49,10 @@ if __name__ == "__main__":
 
 '''
 Actualizacion de "yt_dlp"
- 
+
     ingresar a terminal = ctrl+Mayus+ñ
-    ejecutar comando = pip install -U yt-dlp
+    Comandos a ejecutar:
+    actualizar yt-dlp = pip install -U yt-dlp
     vereficar instalacion = yt-dlp --version
 
     NOTA: la actualización de "yt_dlp" puede ayudar a solucionar errores si el codigo 
