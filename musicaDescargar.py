@@ -1,11 +1,10 @@
-import yt_dlp 
+import yt_dlp
 import os
 
 # Metodo
 def descargar_musica(url,carpeta="Songs"): # pasamos parametros
-    # Crear carpeta si esta no existe
-    try: 
-        if not os.path.exists(carpeta):
+    try:# manejo de Errores
+        if not os.path.exists(carpeta): # Crear carpeta si esta no existe
             os.makedirs(carpeta)
 
         # Descargar contenido (solo audio)
@@ -35,18 +34,26 @@ def descargar_musica(url,carpeta="Songs"): # pasamos parametros
             ydl.download([url])
             print("Descarga completa!!!\n")
         
-    # Manejo de errores
+    # capturando Error
     except Exception as e:
         print(f"ocurrio un error : {e}")
         
 if __name__ == "__main__":
     while True:
         url = input("\nPege su enlace del video: ") # entrada de datos 
-        descargar_musica(url) # llamar metodo
+        descargar_musica(url) # llamar metodo (pasar variable)
         opcion = input("¿Desea descargar otra canción? (s/n): ").lower() # opcion para repetir
         if opcion != 's': # si la opcion es diferente a 's' salir del programa
                 print("Saliendo del programa...")
                 break # salir del bucle
 
+'''
+Actualizacion de "yt_dlp"
+ 
+    ingresar a terminal = ctrl+Mayus+ñ
+    ejecutar comando = pip install -U yt-dlp
+    vereficar instalacion = yt-dlp --version
 
-        
+    NOTA: la actualización de "yt_dlp" puede ayudar a solucionar errores si el codigo 
+    no descarga el audio.
+'''
