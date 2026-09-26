@@ -1,4 +1,4 @@
-import yt_dlp
+import yt_dlp # permite descargar contenido 
 import os
 
 # Metodo
@@ -42,7 +42,8 @@ if __name__ == "__main__":
     while True:
         url = input("\nPege su enlace del video: ") # entrada de datos 
         descargar_musica(url) # llamar metodo (pasar variable)
-        opcion = input("¿Desea descargar otra canción? (s/n): ").lower() # opcion para repetir
+        
+        opcion = input("¿Desea descargar otra canción? (s/n): ").lower() # lower() convierte a minusculas
         if opcion != 's': # si la opcion es diferente a 's' salir del programa
                 print("Saliendo del programa...")
                 break # salir del bucle

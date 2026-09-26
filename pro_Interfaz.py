@@ -155,7 +155,7 @@ etiqueta_estado = ttk.Label(ventana, text="", font=("Segoe UI", 10, "italic"), f
 etiqueta_estado.pack(pady=10) # Espacio entre widgets
 
 # Pie de página
-ttk.Label(ventana, text="Hecho con ♥ por el Brusco", font=("Segoe UI", 13), foreground="#888").pack(side=tk.BOTTOM, pady=5)
+ttk.Label(ventana, text="Hecho con ♥ por el Zuñiga", font=("Segoe UI", 13), foreground="#888").pack(side=tk.BOTTOM, pady=5)
 
 # Iniciar/visualizar la ventana
 ventana.mainloop()
