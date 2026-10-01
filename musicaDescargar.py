@@ -1,5 +1,5 @@
 import yt_dlp # permite descargar contenido 
-import os
+import os # manipular archivos del SO
 
 # Metodo
 def descargar_musica(url,carpeta="Songs"): # pasamos parametros
