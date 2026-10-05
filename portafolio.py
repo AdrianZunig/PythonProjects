@@ -39,6 +39,6 @@ while True:
         gene_pasword() # llamar metodo
     elif op == 0:
          print('Saliendo del programa...')
-         break
+         break # salir del bucle
     else:
         print("Opción no válida, intenta de nuevo.")
