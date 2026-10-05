@@ -17,11 +17,20 @@ def gene_pasword():
     
 # bucle, repetir el progrograma
 while True:
+    print('\n====== Bienvenido =======\n',
+          '¿Que desea realizar hoy?\n',
+          '1) Generar una contraseña.\n',
+          '2) ...')
+    
     try: # manejo de errores
-        gene_pasword()
+        # condicional
+        op = int(input())
+        if op == 1:
+            gene_pasword() # llamar metodo
+        else:
+            print('Error: opcion inexistente...')      
 
         opcion = input("\n¿Desea salir? (si/no): ").lower() # lower() convierte a minusculas
-        # condicional
         if opcion != 'no': # si la opcion es diferente a 'no' salir del programa
             print("Saliendo del programa...\n")
             break # salir del bucle
