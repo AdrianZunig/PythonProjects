@@ -23,7 +23,8 @@ def menu():
     print('\n====== Bienvenido =======\n',
               '¿Que desea realizar hoy?\n',
               '1) Generar una contraseña.\n',
-              '2) ...')
+              '2) ...\n',
+              '0) Salir.')
     try: # manejo de Error
         op = int(input()) # entrda de opcion menu
         return op # retornar valor
