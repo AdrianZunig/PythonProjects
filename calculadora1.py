@@ -63,6 +63,8 @@ while True:
     elif op == 5:
         resultado = potencia(val1, val2)
         print(f'\n{val1} ^ {val2} =', resultado)
+    elif op == 6:
+        print('Saliendo...')
     else:
         print('\nOpcion invalida, cargando...')
         
