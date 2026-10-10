@@ -36,12 +36,16 @@ def mostrar_menu():
 # bucle - repetir condicional -----------------------------------------------------------------------
 while True:
     mostrar_menu() # llamar metodo
-    try:
+    try: # manejo de Errores
 # variables ---------------------------------------------------------------------------------
         op = int(input('Eliga una opcion: '))
-        val1 = float(input('\nPrimer número: '))
-        val2 = float(input('Segundo número: '))
-    except ValueError: 
+        if op == 0: 
+            print('Saliendo del programa...')
+            break # terminar/salir del programa
+        else:
+            val1 = float(input('\nPrimer número: '))
+            val2 = float(input('Segundo número: '))
+    except ValueError: # capturar Error
         print('Eso no es un número. Intente de nuevo...')
         continue # volver al inicio del bucle
 
@@ -63,8 +67,6 @@ while True:
     elif op == 5:
         resultado = potencia(val1, val2)
         print(f'\n{val1} ^ {val2} =', resultado)
-    elif op == 6:
-        print('Saliendo...')
     else:
         print('\nOpcion invalida, cargando...')
         
