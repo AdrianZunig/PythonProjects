@@ -1,5 +1,4 @@
 
-
 # def metodo (parametros) --------------------------------------------------------------------------
 def suma(num1: float,num2: float) -> float:
     return num1 + num2 # regresar valores/resultado
@@ -36,18 +35,24 @@ def mostrar_menu():
 # bucle - repetir condicional -----------------------------------------------------------------------
 while True:
     mostrar_menu() # llamar metodo
-    try: # manejo de Errores
+
+    try: # manejo de Errores - validar tipo de dato
 # variables ---------------------------------------------------------------------------------
         op = int(input('Eliga una opcion: '))
+    # validar opcion en menu existen o inexistente
         if op == 0: 
             print('Saliendo del programa...')
             break # terminar/salir del programa
+        
         else:
+            if op >= 6: 
+                print('Opcion inexistente, cargando...')
+                continue # volver a inicio de bucle
             val1 = float(input('\nPrimer número: '))
             val2 = float(input('Segundo número: '))
     except ValueError: # capturar Error
         print('Eso no es un número. Intente de nuevo...')
-        continue # volver al inicio del bucle
+        continue # volver a inicio de bucle
 
 # condicional ---------------------------------------------------------------
     if op == 1:
